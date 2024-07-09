@@ -1,0 +1,30 @@
+<!-- menu superior DO COMPONENTE -->
+<div class="color">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Financeiro</a>
+    <button class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <!--rota que leva a pagina inicial-->
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="'pagina-inicial'"
+             [routerLinkActive]="'active'" >Página inicial</a>
+        </li>
+        <!--rota que leva a pagina de visualizar tarefas-->
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'visualizar-tarefas'"
+             [routerLinkActive]="'active'" >Visualizar Finanças</a>
+        </li>
+        <!--rota que leva a sobre nos-->
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'sobre-nos'"
+             [routerLinkActive]="'active'" >Sobre nós</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
